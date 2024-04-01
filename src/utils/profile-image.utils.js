@@ -299,7 +299,7 @@ async function genAvatarFrame(data, options) {
   let canvas = createCanvas(885, 303);
   const ctx = canvas.getContext('2d');
 
-  const frameHash = data?.avatar_decoration;
+  const frameHash = data?.avatar_decoration_data.asset;
 
   const avatarFrame = await loadImage(
     `https://cdn.discordapp.com/avatar-decoration-presets/${frameHash}.png`
