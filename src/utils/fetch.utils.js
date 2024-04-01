@@ -1,7 +1,7 @@
 const DiscordArtsError = require('./error.utils');
 
 // Private and exclusive Discord-Arts API
-const BASE_URL = 'https://discord-arts.asure.dev/user';
+const BASE_URL = 'https://japi.rest/discord/v1/user';
 const fetch = require('node-fetch').default;
 
 async function fetchUserData(userId) {
