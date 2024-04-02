@@ -86,7 +86,7 @@ async function genPng(data, options) {
 
   if (
     !options?.removeAvatarFrame &&
-    data?.avatar_decoration_data.asset &&
+    data?.avatar_decoration_data &&
     !options?.squareAvatar
   ) {
     const avatarFrame = await genAvatarFrame(data, options);
